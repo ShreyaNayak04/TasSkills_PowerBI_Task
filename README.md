@@ -11,31 +11,32 @@ This repository contains a Power BI dashboard project showcasing visualizations 
 
 Certainly, let's break down the schema model depicted in the image.
 
-Schema Model Description:
+## Schema Model Description:
 
 The image presents a schema model representing a data warehouse with four main tables:
 
-1. public_movie_rich:
+## 1. public_movie_rich:
 
 Attributes: color, country, genres, language, movie_title
 This table appears to store comprehensive information about movies, including their colors, countries of origin, genres, languages, and titles.
 
-2. public_movie_cast:
+## 2. public_movie_cast:
 
 Attributes: actor, director, movie_title
 This table likely stores information about the cast and crew of movies, linking actors and directors to their respective movie titles.
 
-3. public_movie_rating:
+## 3. public_movie_rating:
 
 Attributes: imdb_score, MAX_VAL, MIN_VAL
 This table seems to hold ratings information for movies, including the IMDb score and potentially maximum and minimum ratings.
 
-4. public_crickters:
+## 4. public_crickters:
 
 Attributes: age, city, ipl_salary, ipl_team, name, position
 
 This table appears to store information about cricketers, including their age, city, IPL salary, team, name, and playing position.
-Relationships:
+
+## Relationships:
 
 public_movie_rich has a one-to-one relationship with public_movie_cast based on the movie_title attribute. This suggests that each movie record in public_movie_rich corresponds to a single record in public_movie_cast with the same movie title.
 public_movie_cast has a one-to-one relationship with public_movie_rating based on the movie_title attribute. This indicates that each movie in the public_movie_cast table has a corresponding rating record in the public_movie_rating table.
@@ -49,7 +50,7 @@ This dashboard provides a comprehensive view of Indian Premier League (IPL) team
 
 ## Visualizations and Insights:
 
-Sum of IPL Salary by Age:
+## Sum of IPL Salary by Age:
 
 Type: Scatter plot
 Insights:
@@ -57,28 +58,28 @@ Visualizes the relationship between player age and their salary.
 Helps identify potential salary trends based on player age.
 Can highlight players who command higher salaries at different age ranges.
 
-Count of City by Position:
+## Count of City by Position:
 
 Type: Pie chart
 Insights:
 Shows the distribution of players across different positions within each city.
 Helps understand the team composition and potential strengths/weaknesses in specific positions.
 
-Count of Salary Class by Position and IPL Team:
+## Count of Salary Class by Position and IPL Team:
 
 Type: Matrix visual
 Insights:
 Reveals the distribution of player salaries across different positions and teams.
 Helps identify teams with higher salary budgets and potential areas for cost optimization.
 
-Sum of IPL Salary by Position:
+## Sum of IPL Salary by Position:
 
 Type: Ribbon chart
 Insights:
 Visualizes the total salary spent on players in each position.
 Helps identify positions with higher salary budgets and potential areas for cost optimization.
 
-Count of IPL Team:
+## Count of IPL Team:
 
 Type: Card
 Insights: Displays the total number of IPL teams represented in the data.
@@ -112,34 +113,26 @@ This dashboard provides a comprehensive view of Indian Premier League (IPL) team
 
 Visualizations and Insights:
 
-Count of IPL Team:
+## Count of IPL Team:
 
 Type: Card
 Insights: Displays the total number of IPL teams represented in the data. This is a simple yet crucial metric for understanding the scope of the analysis.
 
-Count of Salary Class by IPL Team:
-
-Type: Stacked Bar Chart
-Insights:
-Visualizes the distribution of player salaries across different salary classes for each IPL team.
-Helps identify teams with higher concentrations of high-salaried players.
-Allows for comparisons between teams in terms of their salary structures.
-
-Count of IPL Team by City and Age:
+## Count of IPL Team by City and Age:
 
 Type: Map Chart
 Insights:
 Shows the geographical distribution of teams and the age of players within each city.
 Can be used to identify potential regional trends or disparities in player demographics.
 
-Count of IPL Team by Position:
+## Count of IPL Team by Position:
 
 Type: Pie Chart
 Insights:
 Shows the distribution of teams across different player positions.
 Helps understand the team composition and potential strengths/weaknesses in specific positions.
 
-Sum of IPL Salary by IPL Team:
+## Sum of IPL Salary by IPL Team:
 
 Type: Line Chart
 Insights:
@@ -178,12 +171,12 @@ This dashboard provides a comprehensive overview of movie data, focusing on prof
 
 Visualizations and Insights:
 
-Count of movie_title:
+## Count of movie_title:
 
 Type: Card
 Insights: Displays the total number of movies included in the dataset. This provides a basic understanding of the data's scope.
 
-Top 10 Movies by Profit:
+## Top 10 Movies by Profit:
 
 Type: Clustered Column Chart
 Insights:
@@ -191,7 +184,7 @@ Identifies the top 10 most profitable movies.
 Highlights which movies have generated the highest returns.
 Can be used to analyze factors contributing to high profitability (e.g., genre, budget, star power).
 
-Count of movie_title by country:
+## Count of movie_title by country:
 
 Type: Map Chart
 Insights:
@@ -199,7 +192,7 @@ Visualizes the geographical distribution of movie production.
 Identifies regions with high movie production activity.
 Can be used to analyze regional market trends and opportunities.
 
-First genres by language:
+## First genres by language:
 
 Type: Treemap
 Insights:
@@ -207,7 +200,7 @@ Shows the distribution of movie genres across different languages.
 Helps identify popular genres in different linguistic markets.
 Can be used to inform content creation and distribution strategies.
 
-Count of genres by genres:
+## Count of genres by genres:
 
 Type: Line Chart
 Insights:
@@ -215,7 +208,7 @@ Visualizes the trend of movie genres over time (if release date data is availabl
 Identifies emerging and declining genres.
 Can be used to assess the popularity and profitability of different genres.
 
-First movie_title by budget and gross_revenue:
+## First movie_title by budget and gross_revenue:
 
 Type: Scatter Plot
 Insights:
@@ -251,7 +244,7 @@ This dashboard provides a comprehensive overview of movie data, focusing on tren
 
 Visualizations and Insights:
 
-Average of IMDb_score by title_year:
+## Average of IMDb_score by title_year:
 
 Type: Line Chart
 Insights:
@@ -259,7 +252,7 @@ Visualizes the trend of average IMDb scores over time.
 Helps identify periods with higher or lower average ratings.
 Can be used to analyze the evolution of movie quality over time.
 
-Count of movie_title by imdb_score:
+## Count of movie_title by imdb_score:
 
 Type: Clustered Column Chart
 Insights:
@@ -267,7 +260,7 @@ Shows the distribution of movies across different IMDb score ranges.
 Identifies the most common rating ranges for movies.
 Can be used to assess the overall quality of movies in the dataset.
 
-Top 20 count of genres by movie_title:
+## Top 20 count of genres by movie_title:
 
 Type: Treemap
 Insights:
@@ -275,7 +268,7 @@ Visualizes the distribution of movies across different genres.
 Identifies the most popular and least popular genres.
 Can be used to inform content creation and distribution strategies.
 
-Count of Top 8 movie_title by director:
+## Count of Top 8 movie_title by director:
 
 Type: Stacked Bar Chart
 Insights:
@@ -311,12 +304,12 @@ This dashboard provides a high-level overview of movie data, focusing on key met
 
 Visualizations and Insights:
 
-Count of movie_title:
+## Count of movie_title:
 
 Type: Card
 Insights: Displays the total number of movies included in the dataset. Provides a quick overview of the data's scope.
 
-Count of movie_title by director:
+## Count of movie_title by director:
 
 Type: Pie Chart
 Insights:
@@ -324,7 +317,7 @@ Shows the distribution of movies directed by different directors.
 Identifies directors with the highest number of movies in the dataset.
 Can be used to identify prolific directors and potential areas for further analysis.
 
-Count of movie_title by director and actor:
+## Count of movie_title by director and actor:
 
 Type: Matrix Chart
 Insights:
@@ -332,7 +325,7 @@ Reveals the frequency of collaborations between directors and actors.
 Identifies frequent partnerships and potential creative synergies.
 Can be used to analyze the impact of director-actor collaborations on movie success.
 
-Average of imdb_score:
+## Average of imdb_score:
 
 Type: Gauge Chart
 Insights:
@@ -368,7 +361,7 @@ This dashboard provides a comprehensive view of sales performance across differe
 
 Visualizations and Insights:
 
-Region, Manager, SalesMan:
+## Region, Manager, SalesMan:
 
 Type: Treemap
 Insights:
@@ -376,21 +369,21 @@ Visualizes the hierarchical breakdown of sales by region, manager, and salespers
 Shows the sales contribution of each salesperson within their respective region and manager.
 Helps identify top-performing sales teams and individuals.
 
-Count of Region by Manager:
+## Count of Region by Manager:
 
 Type: Pie Chart
 Insights:
 Shows the distribution of sales across different regions managed by each manager.
 Helps identify managers responsible for larger territories or higher sales volumes.
 
-Sum of Sale_amt by Year and SalesMan:
+## Sum of Sale_amt by Year and SalesMan:
 
 Type: Waterfall Chart
 Insights:
 Visualizes the sales performance of each salesperson over time.
 Helps identify trends in individual sales performance and identify potential areas for improvement.
 
-Count of SalesMan by Region and Manager:
+## Count of SalesMan by Region and Manager:
 
 Type: Map Chart
 Insights:
@@ -422,7 +415,7 @@ This dashboard provides a comprehensive view of sales performance across differe
 
 Visualizations and Insights:
 
-Count of Units by Item and Region:
+## Count of Units by Item and Region:
 
 Type: Clustered Column Chart
 Insights:
@@ -430,7 +423,7 @@ Shows the sales volume (units sold) for each item across different regions.
 Identifies top-selling items in each region.
 Helps understand regional demand for different products.
 
-Sum of Sale_amt and Sum of Units by Region and Manager:
+## Sum of Sale_amt and Sum of Units by Region and Manager:
 
 Type: Scatter Plot
 Insights:
@@ -438,7 +431,7 @@ Visualizes the relationship between sales amount and units sold for each region 
 Helps identify regions and managers with high sales volume and revenue.
 Can be used to identify potential areas for improvement in sales efficiency.
 
-Sum of Sale_amt by Year and Quarter:
+## Sum of Sale_amt by Year and Quarter:
 
 Type: Line Chart
 Insights:
@@ -446,7 +439,7 @@ Shows the trend of sales revenue over time, broken down by year and quarter.
 Identifies seasonal trends and fluctuations in sales.
 Can be used to forecast future sales and plan inventory accordingly.
 
-Sale_amt and Units:
+## Sale_amt and Units:
 
 Type: Scatter Plot
 Insights:
